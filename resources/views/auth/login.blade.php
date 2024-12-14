@@ -1,4 +1,9 @@
 <x-guest-layout>
+    <!-- Logo -->
+    <div class="flex justify-center my-4">
+        <img src="{{ asset('storage/images/pongperpus (2).png') }}" alt="Logo" class="h-16 w-auto">
+    </div>
+
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 

@@ -19,6 +19,8 @@ class BookController extends Controller
         return view('books.index', $data);
     }
 
+
+
     public function create()
     {
         $data['bookshelves'] = Bookshelf::pluck('name', 'id');
